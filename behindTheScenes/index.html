@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How JS Works Behind The Scenes</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <h2 class="text-center text-warning text-uppercase p-3">How JS Works Behind The Scenes</h2>
+    <div class="card-group">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">What Happens to Our Code</h5>
+          <p class="card-text"> Our code is executed by a JS Engine:</p>
+          <p class="card-text"><small class="text-muted">-1st goes through a parser and checks the code syntax</small></p>
+          <p class="card-text"><small class="text-muted">-2nd Parser creates a data structure which is converted to machine code.</small></p>
+          <p class="card-text"><small class="text-muted">-3rd code runs</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Execution Contexts and Execution Stack:</h5>
+          <p class="card-text"> All JS code runs in an environment called an execution context</p>
+          <p class="card-text"><small class="text-muted">The default execution context is the global context</small></p>
+          <p class="card-text"><small class="text-muted"><code>-In the browser, that's the window object //let lastName === window.lastName</code></small></p>
+          <p class="card-text"><small class="text-muted">-Code that is not inside any function</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./this.js" charset="utf-8"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+
+</html>
